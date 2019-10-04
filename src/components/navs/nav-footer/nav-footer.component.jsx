@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './nav-footer.styles.scss';
-
 const NavFooter = () => (
   <ul className="footer__nav">
     <li>

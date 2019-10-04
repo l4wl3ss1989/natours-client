@@ -3,7 +3,6 @@ import React from 'react';
 import NavFooter from '../navs/nav-footer/nav-footer.component';
 
 import logoGreen from '../../assets/images/logo-green.png';
-import './footer.styles.scss';
 
 const Footer = () => (
   <div className="footer">

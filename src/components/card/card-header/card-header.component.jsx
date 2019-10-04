@@ -2,8 +2,6 @@ import React from 'react';
 
 import { apiImgUrl } from '../../../utils';
 
-import './card-header.styles.scss';
-
 const CardHeader = ({ name, imageCover }) => (
   <div className="card__header">
     <div className="card__picture">

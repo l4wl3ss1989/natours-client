@@ -12,7 +12,7 @@ const App = () => (
   <React.Fragment>
     <Header />
     <Switch>
-      <Route path="/tour" exact component={Tour} />
+      <Route path="/tours/:slug" exact component={Tour} />
       <Route path="/" component={Overview} />
     </Switch>
     <Footer />

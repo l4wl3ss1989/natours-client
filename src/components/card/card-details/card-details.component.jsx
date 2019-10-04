@@ -2,7 +2,7 @@ import React from 'react';
 
 import Icon from '../../icons/icon.component';
 
-import './card-details.styles.scss';
+import { convertDate } from '../../../utils';
 
 const CardDetials = ({ difficulty, duration, summary, startLocation, startDates, locations, maxGroupSize }) => (
   <div className="card__details">
@@ -16,7 +16,7 @@ const CardDetials = ({ difficulty, duration, summary, startLocation, startDates,
     </div>
     <div className="card__data">
       <Icon name="icon-calendar" className="card__icon" />
-      <span>{startDates[0]}</span>
+      <span>{convertDate(startDates[0])}</span>
     </div>
     <div className="card__data">
       <Icon name="icon-flag" className="card__icon" />

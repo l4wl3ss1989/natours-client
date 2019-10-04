@@ -4,11 +4,9 @@ import CardHeader from './card-header/card-header.component';
 import CardDetails from './card-details/card-details.component';
 import CardFooter from './card-footer/card-footer.component';
 
-import './card.styles.scss';
-
 const Card = ({ tour }) => {
-  console.log(tour);
   const {
+    id,
     name,
     imageCover,
     summary,
@@ -20,7 +18,8 @@ const Card = ({ tour }) => {
     maxGroupSize,
     price,
     ratingsAverage,
-    ratingsQuantity
+    ratingsQuantity,
+    slug
   } = tour;
   return (
     <div className="card">
@@ -34,7 +33,7 @@ const Card = ({ tour }) => {
         locations={locations}
         maxGroupSize={maxGroupSize}
       />
-      <CardFooter price={price} ratingsAverage={ratingsAverage} ratingsQuantity={ratingsQuantity} />
+      <CardFooter id={id} price={price} ratingsAverage={ratingsAverage} ratingsQuantity={ratingsQuantity} slug={slug} />
     </div>
   );
 };

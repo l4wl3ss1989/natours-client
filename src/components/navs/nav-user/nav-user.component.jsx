@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import defaultUser from '../../../assets/images/users/default.jpg';
-import '../navs.styles.scss';
-import './nav-user.styles.scss';
+import { apiImgUrl } from '../../../utils';
 
 const NavUser = () => (
   <nav className="nav nav--user">
@@ -11,7 +8,7 @@ const NavUser = () => (
       My bookings
     </Link>
     <Link to="/" className="nav__el">
-      <img src={defaultUser} alt="User" className="nav__user-img" />
+      <img src={apiImgUrl('default.jpg', 'users')} alt="User" className="nav__user-img" />
       <span>Jonas</span>
     </Link>
     <button className="nav__el">Log in</button>
